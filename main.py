@@ -2,11 +2,12 @@ import subprocess
 import pygetwindow as gw
 import os
 
+
 path = None
 possible_locations = [
-    f"{os.environ('LOCALAPPDATA')}",
-    f"{os.environ('ProgramFiles')}",
-    f"{os.environ('ProgramFiles(x86)')}",
+    os.environ.get("LOCALAPPDATA"),
+    os.environ.get("ProgramFiles"),
+    os.environ.get("ProgramFiles(x86)"),
 ]
 
 for location in possible_locations:
