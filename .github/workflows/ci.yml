@@ -44,7 +44,7 @@ jobs:
 
       - name: Build project with PyInstaller
         run: |
-          pyinstaller --onefile --noconsole main.py -o chrome-no-flash.exe
+          pyinstaller --onefile --noconsole --name chrome-no-flash main.py
 
       - name: Archive build artifacts
         uses: actions/upload-artifact@v3
