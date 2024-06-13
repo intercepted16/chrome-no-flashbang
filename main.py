@@ -1,7 +1,7 @@
 import subprocess
 import pygetwindow as gw
 import os
-
+from sys import exit
 
 path = None
 possible_locations = [
